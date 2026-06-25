@@ -109,7 +109,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-inner">
           <p>🚗 <strong>CarSmart</strong> — Empowering you to understand your vehicle</p>
-          <p className="footer-sub">Price estimates are for the US market. Always consult your owner's manual and get multiple quotes for major repairs.</p>
+          <p className="footer-sub">All prices are in CAD and reflect British Columbia market rates. Always consult your owner's manual and get multiple quotes for major repairs.</p>
         </div>
       </footer>
     </div>

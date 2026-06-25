@@ -35,20 +35,20 @@ export const quizQuestions = [
       "Cover the light with tape and hope for the best",
     ],
     correct: 1,
-    explanation: "Auto parts stores like AutoZone, O'Reilly, and Advance Auto Parts will read your OBD-II codes for FREE. The code tells you exactly what system triggered the light. This prevents you from walking into a shop without knowing what the issue is.",
+    explanation: "Some auto parts stores like NAPA and Lordco in BC will read your OBD-II codes for free or a small fee. The code tells you exactly what system triggered the light. This prevents you from walking into a shop without knowing what the issue is.",
     category: "Basics",
   },
   {
     id: 4,
     question: "How often should you change your oil in a modern car with full synthetic oil?",
     options: [
-      "Every 1,000 miles to be safe",
-      "Every 3,000 miles — that's the rule",
-      "Every 5,000–10,000 miles per your owner's manual",
+      "Every 1,600 km to be safe",
+      "Every 5,000 km — that's the rule",
+      "Every 8,000–16,000 km per your owner's manual",
       "Once a year regardless of mileage",
     ],
     correct: 2,
-    explanation: "The '3,000 mile rule' is a myth perpetuated by oil change shops. Modern synthetic oil lasts 5,000–10,000+ miles. Check YOUR owner's manual — it specifies exactly what your car needs. Using synthetic oil and following the manual schedule is perfectly safe.",
+    explanation: "The '5,000 km rule' is a myth perpetuated by oil change shops. Modern synthetic oil lasts 8,000–16,000+ km. Check YOUR owner's manual — it specifies exactly what your car needs. Using synthetic oil and following the manual schedule is perfectly safe.",
     category: "Maintenance",
   },
   {
@@ -61,7 +61,7 @@ export const quizQuestions = [
       "Demand they show you photos first",
     ],
     correct: 1,
-    explanation: "Air filter replacement is a 2-minute job that anyone can do. The filter costs $15–$25. Never pay $50–$100+ for this service at a shop. Buy it at AutoZone and swap it yourself — just note the orientation and drop the new one in.",
+    explanation: "Air filter replacement is a 2-minute job that anyone can do. The filter costs $20–$35 CAD at Canadian Tire or Lordco. Never pay $80–$140+ for this service at a shop. Buy it yourself and swap it — just note the orientation and drop the new one in.",
     category: "Scams",
   },
   {
@@ -122,11 +122,11 @@ export const quizQuestions = [
     options: [
       "You must approve any safety-related work",
       "You must pay since they already did the work",
-      "In most US states, you're not required to pay for unauthorized repairs",
+      "In BC, you're not required to pay for unauthorized repairs",
       "You can dispute it but will likely have to pay",
     ],
     correct: 2,
-    explanation: "Most US states require shops to get customer authorization before performing any repair. Work done without your approval is unauthorized — you are NOT legally required to pay for it. Always get a written estimate and sign it before they begin work.",
+    explanation: "In BC, the Motor Vehicle Act requires shops to get your written authorization before performing any repair. Work done without your approval is unauthorized — you are NOT legally required to pay for it. Always get a written estimate and sign it before they begin work.",
     category: "Scams",
   },
 ];

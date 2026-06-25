@@ -8,21 +8,21 @@ function Calculator() {
   const [location, setLocation] = useState('suburban');
 
   const services = {
-    'oil-synthetic': { name: 'Oil Change (Synthetic)', base: [65, 95] },
-    'oil-conventional': { name: 'Oil Change (Conventional)', base: [35, 55] },
-    'brakes-front': { name: 'Front Brake Pads', base: [150, 280] },
-    'brakes-full': { name: 'Full Brake Job (Pads + Rotors)', base: [400, 700] },
-    'tires-rotate': { name: 'Tire Rotation', base: [20, 50] },
-    'air-filter': { name: 'Air Filter', base: [20, 40] },
-    'battery': { name: 'Battery Replacement', base: [120, 200] },
-    'alignment': { name: 'Wheel Alignment', base: [75, 150] },
-    'spark-plugs': { name: 'Spark Plugs', base: [80, 200] },
-    'timing-belt': { name: 'Timing Belt', base: [400, 900] },
+    'oil-synthetic': { name: 'Oil Change (Synthetic)', base: [90, 130] },
+    'oil-conventional': { name: 'Oil Change (Conventional)', base: [55, 80] },
+    'brakes-front': { name: 'Front Brake Pads', base: [200, 380] },
+    'brakes-full': { name: 'Full Brake Job (Pads + Rotors)', base: [550, 950] },
+    'tires-rotate': { name: 'Tire Rotation', base: [30, 60] },
+    'air-filter': { name: 'Air Filter', base: [30, 55] },
+    'battery': { name: 'Battery Replacement', base: [170, 300] },
+    'alignment': { name: 'Wheel Alignment', base: [100, 200] },
+    'spark-plugs': { name: 'Spark Plugs', base: [110, 220] },
+    'timing-belt': { name: 'Timing Belt', base: [550, 1200] },
   };
 
   const multipliers = {
     vehicle: { sedan: 1.0, suv: 1.1, truck: 1.1, luxury: 1.4, sports: 1.3 },
-    location: { rural: 0.85, suburban: 1.0, urban: 1.2, dealer: 1.6 },
+    location: { rural: 0.85, suburban: 1.0, urban: 1.2, dealer: 1.5 },
   };
 
   const calc = () => {
@@ -65,9 +65,9 @@ function Calculator() {
         <div>
           <label style={{ fontSize: '0.8rem', fontWeight: 600, display: 'block', marginBottom: 6, opacity: 0.8 }}>SHOP TYPE / LOCATION</label>
           <select className="calc-select" value={location} onChange={e => setLocation(e.target.value)}>
-            <option value="rural">Rural / Small Town</option>
-            <option value="suburban">Suburban Independent</option>
-            <option value="urban">Urban / Big City</option>
+            <option value="rural">Rural BC</option>
+            <option value="suburban">Suburban BC (Langley, Abbotsford, etc.)</option>
+            <option value="urban">Metro Vancouver / Victoria</option>
             <option value="dealer">Dealership</option>
           </select>
         </div>
