@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { scams, generalRedFlags, protectYourself } from '../data/scams';
+import PriceDisclaimer from '../components/PriceDisclaimer';
 
 const severityConfig = {
   critical: { color: '#dc2626', bg: '#fef2f2', label: 'CRITICAL', badge: 'badge-critical' },
@@ -110,6 +111,8 @@ export default function Scams() {
           Real tactics used by dishonest shops — and exactly how to protect yourself. Knowledge is your best defense.
         </p>
       </div>
+
+      <PriceDisclaimer style={{ marginBottom: 16 }} />
 
       <div className="danger-box" style={{ marginBottom: 24 }}>
         <strong>Important:</strong> Most mechanics are honest professionals. But some shops — especially chain quick-lube shops — use commission-based sales tactics that incentivize unnecessary upsells. Knowing these tactics protects you even at honest shops.

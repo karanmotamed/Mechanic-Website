@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { repairCategories, priceComparisons, laborRates } from '../data/costs';
+import PriceDisclaimer from '../components/PriceDisclaimer';
 
 function Calculator() {
   const [vehicleType, setVehicleType] = useState('sedan');
@@ -139,6 +140,8 @@ export default function Costs() {
           Fair price ranges for common repairs and maintenance. Know what's reasonable before you walk in — and know when to walk out.
         </p>
       </div>
+
+      <PriceDisclaimer style={{ marginBottom: 16 }} />
 
       <div className="tip-box" style={{ marginBottom: 32 }}>
         <strong>How to use this page:</strong> Use the calculator to get a ballpark for your specific situation, then check the detailed tables to understand what's fair. Remember — prices vary by region, vehicle, and shop type. These are US market averages.

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { maintenanceItems } from '../data/maintenance';
+import PriceDisclaimer from '../components/PriceDisclaimer';
 
 function MaintenanceCard({ item }) {
   const [open, setOpen] = useState(false);
@@ -118,6 +119,8 @@ export default function Maintenance() {
           What your car actually needs, when it needs it, and how much it should cost. This is your defense against unnecessary services.
         </p>
       </div>
+
+      <PriceDisclaimer style={{ marginBottom: 16 }} />
 
       <div className="warning-box">
         <strong>⚠️ The #1 Rule:</strong> Your owner's manual is the REAL service schedule — not the sticker on your windshield, not what the shop recommends, not what a friend says. The manual was written by the engineers who designed your specific car.
